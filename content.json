@@ -1,0 +1,97 @@
+{
+  "media": {
+    "skyline": {
+      "type": "image",
+      "src": "assets/skyline.jpg",
+      "note": "Real DTLA night photo. Swap in admin or replace assets/skyline.jpg."
+    },
+    "heroBackground": "assets/hero.jpg",
+    "founderPhoto": "assets/podcast.jpg",
+    "finalBackground": "assets/room.jpg"
+  },
+  "introVideo": {
+    "enabled": true,
+    "provider": "youtube",
+    "id": "",
+    "title": "Watch Brandon's welcome",
+    "poster": "assets/hero.jpg",
+    "note": "Set provider to youtube/vimeo and paste a link OR the ID (a full URL works). Or set provider to 'file' and put a direct MP4 URL in id (upload one in the admin)."
+  },
+  "hero": {
+    "eyebrow": "BCGK Capital Group · Private Mastermind",
+    "titleLead": "Apply to join the",
+    "titleGold": "High Stakes Deals",
+    "titleSub": "Inner Circle",
+    "blurb": "A private room of serious multifamily operators scaling past 50 doors. We teach the whole process A–Z — sourcing, underwriting, financing, raising capital, and operations — alongside an accountability community that moves."
+  },
+  "testimonials": [
+    {
+      "name": "Anthony",
+      "handle": "Member since 2024",
+      "photo": "",
+      "stars": 5,
+      "quote": "An 8-year plan turned into 9 months.",
+      "body": "I've met multiple partners, got every resource I needed to take down a deal, and I'm surrounded by more like-minded operators than ever. This turned owning at scale into being in escrow within 9 months of joining."
+    },
+    {
+      "name": "Shane",
+      "handle": "Member since 2024",
+      "photo": "",
+      "stars": 5,
+      "quote": "Under contract within months.",
+      "body": "Within a few months of joining I teamed up with another member and we got a property under contract. The deal was promising enough that BCGK is partnering on it. One of the best decisions I've made."
+    },
+    {
+      "name": "Gideon",
+      "handle": "Member since 2023",
+      "photo": "",
+      "stars": 5,
+      "quote": "They didn't accelerate it — they enabled it.",
+      "body": "Eight months ago I decided to scale up and joined the group. Now I'm in escrow. The support, the learning, and the relationships were critical. One of the best investments I've ever made."
+    }
+  ],
+  "playlist": {
+    "heading": "High Stakes Deals — Insights & Training",
+    "subhead": "Real deals, real numbers. A rotating playlist from the podcast and member trainings.",
+    "provider": "youtube",
+    "videos": [
+      {
+        "id": "",
+        "title": "How we underwrote a 48-unit seller-financed deal",
+        "duration": "18:24"
+      },
+      {
+        "id": "",
+        "title": "Raising your first $500K from private capital",
+        "duration": "22:10"
+      },
+      {
+        "id": "",
+        "title": "The 10-to-50 door jump: systems that scale",
+        "duration": "15:47"
+      },
+      {
+        "id": "",
+        "title": "Inside a live Deal Room underwriting session",
+        "duration": "31:02"
+      }
+    ],
+    "note": "Fill each video 'id' with its YouTube ID. Empty ids render as 'coming soon' tiles."
+  },
+  "webinar": {
+    "enabled": true,
+    "label": "Join our webinar",
+    "url": "https://your-site.kajabi.com/webinar",
+    "caption": "Free live training · Limited seats",
+    "note": "Paste your Kajabi webinar registration URL. Button opens it in a new tab."
+  },
+  "integrations": {
+    "hubspot": {
+      "enabled": false,
+      "portalId": "",
+      "formGuid": "",
+      "region": "na1",
+      "note": "When ready: set enabled=true, paste portalId + formGuid from HubSpot. The application form will ALSO post to HubSpot. Leaving enabled=false changes nothing."
+    }
+  }
+}
