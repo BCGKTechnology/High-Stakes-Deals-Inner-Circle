@@ -313,6 +313,9 @@
         }
       };
 
+      // eslint-disable-next-line no-console
+      console.log("[BCGK] Submitting to HubSpot:", payload);
+
       fetch(
         "https://api.hsforms.com/submissions/v3/integration/submit/" + cfg.portalId + "/" + cfg.formGuid,
         {
@@ -322,16 +325,32 @@
         }
       )
         .then(function (res) {
-          // HubSpot's public forms endpoint responds 200 on success even if
-          // some optional fields don't match the portal's form definition.
-          return res.ok ? res.json().catch(function () { return {}; }) : Promise.reject(res);
+          if (res.ok) {
+            return res.json().catch(function () { return {}; });
+          }
+          // Read the response body so the real HubSpot rejection reason
+          // (e.g. a missing required field, disabled form, bad GUID) is
+          // visible instead of just a generic failure.
+          return res.text().then(function (bodyText) {
+            return Promise.reject({ status: res.status, statusText: res.statusText, body: bodyText });
+          });
         })
         .then(function () {
+          console.log("[BCGK] HubSpot submission succeeded.");
           onRegistrationSuccess(fields.firstname.value.trim(), fields.email.value.trim());
         })
-        .catch(function () {
+        .catch(function (err) {
+          // Log loudly and specifically so this is easy to spot in DevTools
+          // (Console tab) during a test registration, instead of vanishing.
+          console.error(
+            "[BCGK] ❌ HubSpot submission FAILED — the contact was NOT created/updated in HubSpot. " +
+              "Details:",
+            err
+          );
           // Fail-soft: still confirm the registration experience locally so the
-          // masterclass funnel never dead-ends, and let the user know to double check.
+          // masterclass funnel never dead-ends for a real visitor, and let the
+          // user know to double check. The console.error above is what makes
+          // this failure mode diagnosable rather than silent.
           onRegistrationSuccess(fields.firstname.value.trim(), fields.email.value.trim(), true);
         })
         .finally(function () {

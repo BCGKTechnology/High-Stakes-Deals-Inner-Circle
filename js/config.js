@@ -9,6 +9,10 @@ window.BCGK_CONFIG = {
   webinarTimeLabel: "5:00 PM PT / 8:00 PM ET",
   webinarDurationMinutes: 75,
 
+  // Sent to HubSpot on registration to populate the contact's Event Name /
+  // Event Date properties (separate from the CRM's Marketing Events feature).
+  eventName: "High Stakes Deals FREE Masterclass",
+
   // Zoom meeting link sent to registrants and used for the calendar invite.
   meetingLink: "https://zoom.us/j/98166686039?pwd=U3Q9vNiESNnTR1zsqiNbiLzOC09j7a.1",
 
