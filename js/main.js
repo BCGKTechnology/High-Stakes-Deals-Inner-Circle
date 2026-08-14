@@ -93,8 +93,8 @@
     document.querySelectorAll("[data-webinar-time]").forEach(function (el) {
       el.textContent = window.BCGK_CONFIG.webinarTimeLabel;
     });
-    document.querySelectorAll("[data-kajabi-link]").forEach(function (el) {
-      el.setAttribute("href", window.BCGK_CONFIG.kajabiLink);
+    document.querySelectorAll("[data-meeting-link]").forEach(function (el) {
+      el.setAttribute("href", window.BCGK_CONFIG.meetingLink);
     });
   }
   fillWebinarText();
@@ -202,9 +202,9 @@
       "DTSTART:" + toICSDate(start),
       "DTEND:" + toICSDate(end),
       "SUMMARY:High Stakes Deals FREE Masterclass",
-      "LOCATION:" + cfg.kajabiLink,
-      "DESCRIPTION:Join Here: " + cfg.kajabiLink + " \\n\\nWe're dropping multifamily nuggets you haven't heard before: bonus depreciation\\, syndications\\, GP/LP structure\\, raising investor money\\, investing with IRAs\\, underwriting your first deal\\, and more.",
-      "URL:" + cfg.kajabiLink,
+      "LOCATION:" + cfg.meetingLink,
+      "DESCRIPTION:Join Here: " + cfg.meetingLink + " \\n\\nWe're dropping multifamily nuggets you haven't heard before: bonus depreciation\\, syndications\\, GP/LP structure\\, raising investor money\\, investing with IRAs\\, underwriting your first deal\\, and more.",
+      "URL:" + cfg.meetingLink,
       "STATUS:CONFIRMED",
       "BEGIN:VALARM",
       "TRIGGER:-PT30M",
@@ -247,8 +247,8 @@
       action: "TEMPLATE",
       text: "High Stakes Deals FREE Masterclass",
       dates: toGCalDate(start) + "/" + toGCalDate(end),
-      details: "Join Here: " + cfg.kajabiLink,
-      location: cfg.kajabiLink
+      details: "Join Here: " + cfg.meetingLink,
+      location: cfg.meetingLink
     });
     a.href = "https://calendar.google.com/calendar/render?" + params.toString();
     a.target = "_blank";
@@ -289,14 +289,23 @@
       submitBtn.disabled = true;
       submitBtn.textContent = "Registering…";
 
+      // The site collects one "Name" field, but the HubSpot form has
+      // separate First Name / Last Name properties — split on the first
+      // space so both get populated on the contact record.
+      var fullName = fields.firstname.value.trim();
+      var nameParts = fullName.split(/\s+/);
+      var firstName = nameParts.shift() || fullName;
+      var lastName = nameParts.join(" ");
+
       var cfg = window.BCGK_CONFIG.hubspot;
       var payload = {
         fields: [
-          { name: "firstname", value: fields.firstname.value.trim() },
+          { name: "firstname", value: firstName },
+          { name: "lastname", value: lastName },
           { name: "email", value: fields.email.value.trim() },
           { name: "phone", value: fields.phone.value.trim() },
-          { name: "how_long_followed", value: howLongFollowed ? howLongFollowed.value : "" },
-          { name: "liquid_capital", value: liquidCapital ? liquidCapital.value : "" }
+          { name: "how_long_have_you_followed_bcgk_high_stakes_deals", value: howLongFollowed ? howLongFollowed.value : "" },
+          { name: "liquid_capital_or_credit_available_for_your_next_deal", value: liquidCapital ? liquidCapital.value : "" }
         ],
         context: {
           pageUri: window.location.href,

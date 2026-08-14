@@ -9,13 +9,13 @@ window.BCGK_CONFIG = {
   webinarTimeLabel: "5:00 PM PT / 8:00 PM ET",
   webinarDurationMinutes: 75,
 
-  // PLACEHOLDER — replace with the real Kajabi webinar room link.
-  kajabiLink: "https://events.kajabi.com/PLACEHOLDER-EVENT-LINK",
+  // Zoom meeting link sent to registrants and used for the calendar invite.
+  meetingLink: "https://zoom.us/j/98166686039?pwd=U3Q9vNiESNnTR1zsqiNbiLzOC09j7a.1",
 
-  // HubSpot portal + the existing "Webinar Form" already in the BCGK portal.
+  // HubSpot portal + the "Webinar Registration - High Stakes Deals Inner Circle" form.
   hubspot: {
     portalId: "22108142",
-    formGuid: "87e1eb90-3e7c-43e2-bf1d-ad2b59654f18"
+    formGuid: "fae2a714-e9cb-4afe-ab46-e4b3f957ce65"
   },
 
   contactEmail: "info@bcgk.com",
