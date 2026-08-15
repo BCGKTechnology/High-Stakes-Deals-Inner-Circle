@@ -3,8 +3,40 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>BCGK High Stakes Deals — Inner Circle</title>
-<meta name="description" content="Step into the High Stakes Deals Inner Circle — a private multifamily mastermind for operators scaling past 50 doors." />
+<title>BCGK High Stakes Deals | Real Estate Mastermind &amp; Coaching for Real Estate Professionals</title>
+<meta name="description" content="BCGK High Stakes Deals is a real estate mastermind and coaching program built for real estate professionals who are growing and scaling their real estate business past 50 doors. Apply to the Inner Circle." />
+<link rel="canonical" href="https://highstakesdeals.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="BCGK High Stakes Deals" />
+<meta property="og:title" content="BCGK High Stakes Deals | Real Estate Mastermind &amp; Coaching for Real Estate Professionals" />
+<meta property="og:description" content="A private multifamily mastermind and real estate coaching program for real estate professionals scaling past 50 doors. Apply to the Inner Circle." />
+<meta property="og:url" content="https://highstakesdeals.com/" />
+<meta property="og:image" content="https://highstakesdeals.com/assets/img/og-share-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="BCGK High Stakes Deals — Step Into The Inner Circle" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="BCGK High Stakes Deals | Real Estate Mastermind &amp; Coaching for Real Estate Professionals" />
+<meta name="twitter:description" content="A private multifamily mastermind and real estate coaching program for real estate professionals scaling past 50 doors. Apply to the Inner Circle." />
+<meta name="twitter:image" content="https://highstakesdeals.com/assets/img/og-share-image.png" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "BCGK High Stakes Deals",
+  "alternateName": "BCGK",
+  "url": "https://highstakesdeals.com/",
+  "logo": "https://highstakesdeals.com/assets/img/bcgk-logo.png",
+  "description": "BCGK High Stakes Deals is a real estate mastermind and coaching program helping real estate professionals grow and scale their multifamily real estate business.",
+  "foundingDate": "2020",
+  "sameAs": [
+    "https://www.instagram.com/bcgk_property/",
+    "https://www.youtube.com/@bcgkproperty",
+    "https://www.linkedin.com/company/bcgkproperty",
+    "https://www.tiktok.com/@bcgkproperty"
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css" />
@@ -96,7 +128,7 @@
   }
   @media (max-width: 700px) {
     .hs2-hero { padding: 96px 0 0; min-height: 0; }
-    .hs2-ring-wrap { width: 96vw; height: 96vw; top: 24%; }
+    .hs2-ring-wrap { width: 118vw; height: 118vw; top: 34%; }
   }
   .hs2-h1 {
     position: relative; z-index: 2;
@@ -177,17 +209,15 @@
     will-change: transform;
   }
   .hs2-bento-card:hover { border-color: rgba(198,161,91,0.45); box-shadow: 0 20px 50px rgba(0,0,0,0.45); }
-  .hs2-bento-card.big { grid-column: span 2; grid-row: span 2; }
+  .hs2-bento-card.big { grid-column: span 2; grid-row: span 2; justify-content: center; }
   .hs2-bento-card .tag {
     font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
     color: var(--gold-400); margin-bottom: 10px;
   }
   .hs2-bento-card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; font-weight: 600; color: #fff; margin: 0 0 8px; }
+  .hs2-bento-card.big h3 { font-size: clamp(2.2rem, 3.4vw, 3rem); font-weight: 700; margin-bottom: 12px; }
   .hs2-bento-card p { color: rgba(255,255,255,0.6); font-size: 0.92rem; margin: 0; line-height: 1.5; }
   .hs2-bento-card .num { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 2.6rem; color: var(--gold-500); line-height: 1; margin-bottom: 6px; }
-  .hs2-bento-card .pillars { display: flex; flex-wrap: wrap; gap: 12px 20px; margin-top: 6px; }
-  .hs2-bento-card .pillars div { font-size: 0.78rem; color: rgba(255,255,255,0.55); }
-  .hs2-bento-card .pillars strong { display: block; color: var(--gold-500); font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem; }
   @media (max-width: 900px) {
     /* Fixed-height grid rows (sized for desktop's 2-line copy) clip taller
        wrapped text once cards stack full-width on phones/tablets — switch
@@ -205,6 +235,7 @@
     font-size: clamp(2.4rem, 5vw, 3.6rem);
     background: linear-gradient(100deg, var(--gold-500), #f3e6c8, var(--gold-500));
     background-size: 200% auto; -webkit-background-clip: text; background-clip: text; color: transparent;
+    white-space: nowrap;
   }
   .hs2-counter .lbl { margin-top: 8px; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.55); }
 
@@ -226,14 +257,17 @@
   }
   .hs2-rail-card:hover { transform: translateY(-6px); border-color: rgba(198,161,91,0.4); }
   .hs2-rail-card .letter {
-    font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 3.2rem;
-    color: var(--gold-500); line-height: 1; margin-bottom: 14px;
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 44px; height: 44px;
+    color: var(--gold-500); margin-bottom: 18px;
   }
+  .hs2-rail-card .letter svg { width: 100%; height: 100%; }
   .hs2-rail-card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.4rem; margin: 0 0 12px; color: #fff; }
   .hs2-rail-card p { color: rgba(255,255,255,0.62); margin: 0; line-height: 1.55; }
 
   /* ---------- Testimonial marquee ---------- */
-  .hs2-quote-track { display: inline-flex; gap: 24px; animation: hs2-marquee 40s linear infinite; }
+  .hs2-quote-track { display: inline-flex; gap: 24px; animation: hs2-marquee 40s linear infinite; animation-play-state: paused; }
+  .hs2-quotes.hs2-marquee-active .hs2-quote-track { animation-play-state: running; }
   .hs2-quotes:hover .hs2-quote-track { animation-play-state: paused; }
   .hs2-quotes { overflow: hidden; }
   .hs2-quote-card {
@@ -317,10 +351,11 @@
   <div class="hs2-wrap">
     <span class="hs2-eyebrow">Founding Spots Open Now</span>
     <h1 class="hs2-h1">Step into the<br><span class="accent">Inner Circle.</span></h1>
-    <p class="hs2-sub">A private multifamily mastermind for operators scaling past 50 doors — sourcing, underwriting, financing, and raising capital, taught A to Z by the team that's actually done it.</p>
+    <p class="hs2-sub">A private multifamily mastermind and real estate coaching program for real estate professionals scaling past 50 doors — sourcing, underwriting, financing, and raising capital, taught A to Z by the team that's actually done it.</p>
     <div class="hs2-cta-row">
-      <a href="inner-circle.html" class="hs2-btn hs2-btn--solid hs2-magnetic">Apply to the Inner Circle →</a>
-      <a href="join-webinar.html" class="hs2-btn hs2-btn--ghost hs2-magnetic">Join the FREE Masterclass</a>
+      <div class="hs2-glow-btn">
+        <a href="join-webinar.html" class="hs2-magnetic">JOIN FREE WEBINAR! →</a>
+      </div>
     </div>
   </div>
 
@@ -346,11 +381,6 @@
         <div class="tag">The Framework</div>
         <h3>SCORE</h3>
         <p>Score, Scale, Spotlight — the entire curriculum in three pillars. No fluff, no filler modules.</p>
-        <div class="pillars">
-          <div><strong>S</strong>Score</div>
-          <div><strong>S</strong>Scale</div>
-          <div><strong>S</strong>Spotlight</div>
-        </div>
       </div>
       <div class="hs2-bento-card hs2-tilt hs2-reveal">
         <div class="num">250+</div>
@@ -405,17 +435,33 @@
   <div class="hs2-wrap">
     <div class="hs2-rail hs2-reveal">
       <div class="hs2-rail-card">
-        <div class="letter">S</div>
+        <div class="letter" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"></circle>
+            <circle cx="12" cy="12" r="5"></circle>
+            <circle cx="12" cy="12" r="1.3" fill="currentColor" stroke="none"></circle>
+          </svg>
+        </div>
         <h3>Score</h3>
         <p>The technical mastery. Find, underwrite, finance, fund, and operate multifamily assets at a high level — no guesswork on your next deal.</p>
       </div>
       <div class="hs2-rail-card">
-        <div class="letter">S</div>
+        <div class="letter" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3.5 17l5.5-5.5 4 4L21 7"></path>
+            <path d="M15 7h6v6"></path>
+          </svg>
+        </div>
         <h3>Scale</h3>
         <p>The strategic mindset. Stop thinking in duplexes. Move up-market, think bigger, and build a real portfolio with a real exit strategy.</p>
       </div>
       <div class="hs2-rail-card">
-        <div class="letter">S</div>
+        <div class="letter" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 10.5v3a1.8 1.8 0 001.8 1.8h.9l2.8 3.7V5l-2.8 3.7h-.9A1.8 1.8 0 003 10.5z"></path>
+            <path d="M14.5 8.8a3.2 3.2 0 010 6.4M17.3 5.7a7.2 7.2 0 010 12.6"></path>
+          </svg>
+        </div>
         <h3>Spotlight</h3>
         <p>The brand &amp; network game. Be known. Build the social presence, CRM, and events network that make deals come to you.</p>
       </div>
@@ -459,7 +505,7 @@
     <div class="footer-grid">
       <div>
         <div class="footer-logo"><img src="assets/img/bcgk-logo.png" alt="BCGK" style="height:26px;width:auto;" /><span>· HIGH STAKES DEALS</span></div>
-        <p>A multifamily real estate investment group and operator mastermind based in the Greater Sacramento Metro.</p>
+        <p>Join The Inner Circle Program where you'll learn the fundamentals to scaling your multifamily real estate portfolio.</p>
       </div>
       <div>
         <h4>Navigate</h4>
@@ -511,6 +557,28 @@
         revealEls.forEach(function (el) { obs.observe(el); });
       } else {
         revealEls.forEach(function (el) { el.classList.add("hs2-visible"); });
+      }
+    }
+
+    // ---------- Testimonial marquee: hold on the first card until the
+    // section has actually scrolled into view, then start the auto-scroll —
+    // so visitors always see card #1 in full before it begins moving. ----------
+    var quotesEl = document.querySelector(".hs2-quotes");
+    if (quotesEl) {
+      if ("IntersectionObserver" in window) {
+        var quotesObs = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              quotesObs.unobserve(entry.target);
+              setTimeout(function () {
+                entry.target.classList.add("hs2-marquee-active");
+              }, 700);
+            }
+          });
+        }, { threshold: 0.4 });
+        quotesObs.observe(quotesEl);
+      } else {
+        quotesEl.classList.add("hs2-marquee-active");
       }
     }
 

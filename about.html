@@ -3,8 +3,22 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>About Us | BCGK High Stakes Deals</title>
-<meta name="description" content="Meet the operators behind BCGK High Stakes Deals — a multifamily investment group and mastermind founded in 2020." />
+<title>About BCGK High Stakes Deals | Real Estate Coaching for Real Estate Professionals</title>
+<meta name="description" content="Meet the operators behind BCGK High Stakes Deals — a multifamily real estate investment group and real estate coaching program helping real estate professionals grow and scale their real estate business, founded in 2020." />
+<link rel="canonical" href="https://highstakesdeals.com/about.html" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="BCGK High Stakes Deals" />
+<meta property="og:title" content="About BCGK High Stakes Deals | Real Estate Coaching for Real Estate Professionals" />
+<meta property="og:description" content="Meet the operators behind BCGK High Stakes Deals — a multifamily real estate investment group and coaching program for real estate professionals, founded in 2020." />
+<meta property="og:url" content="https://highstakesdeals.com/about.html" />
+<meta property="og:image" content="https://highstakesdeals.com/assets/img/og-share-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="BCGK High Stakes Deals — Step Into The Inner Circle" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="About BCGK High Stakes Deals | Real Estate Coaching for Real Estate Professionals" />
+<meta name="twitter:description" content="Meet the operators behind BCGK High Stakes Deals — a multifamily real estate investment group and coaching program for real estate professionals, founded in 2020." />
+<meta name="twitter:image" content="https://highstakesdeals.com/assets/img/og-share-image.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css" />
@@ -44,7 +58,7 @@
       <div class="reveal">
         <span class="eyebrow">Our Story</span>
         <h2>From one triplex to 250+ doors</h2>
-        <p>BCGK is a multifamily real estate investment group specializing in the Greater Sacramento Metro area. What began as four partners pooling capital for a single triplex has grown into a portfolio of 120+ residential units and roughly $28M in assets under management — with a combined operator track record now touching 250+ doors and a ~$45–50M portfolio value.</p>
+        <p>BCGK is a multifamily real estate investment group specializing in the Greater Sacramento Metro area. What began as four partners pooling capital for a single triplex has grown into a portfolio of 120+ residential units and roughly $28M in assets under management — with a combined operator track record now touching 250+ doors and a ~$45–50M portfolio value. Today, that same track record is the foundation of the real estate coaching we offer real estate professionals who are ready to grow and scale their real estate business.</p>
         <p>The High Stakes Deals Inner Circle grew directly out of that experience. Every framework taught inside the community — sourcing, underwriting, financing, raising capital, and operating — is pulled straight from deals the team has actually closed, not theory.</p>
       </div>
       <div class="video-frame reveal">
@@ -147,9 +161,9 @@
     <div class="cta-banner reveal">
       <div>
         <span class="eyebrow">Ready to meet the team live?</span>
-        <h2 class="mb-0">Join our FREE multifamily masterclass</h2>
+        <h2 class="mb-0">Join our FREE multifamily webinar</h2>
       </div>
-      <a href="join-webinar.html" class="btn btn-primary btn-lg">Join Webinar — FREE Masterclass</a>
+      <a href="#" class="btn btn-primary btn-lg" data-open-register>Register Now!</a>
     </div>
   </div>
 </section>
@@ -159,7 +173,7 @@
     <div class="footer-grid">
       <div>
         <div class="footer-logo"><img src="assets/img/bcgk-logo.png" alt="BCGK" style="height:26px;width:auto;" /><span>· HIGH STAKES DEALS</span></div>
-        <p>A multifamily real estate investment group and operator mastermind based in the Greater Sacramento Metro.</p>
+        <p>Join The Inner Circle Program where you'll learn the fundamentals to scaling your multifamily real estate portfolio.</p>
       </div>
       <div>
         <h4>Navigate</h4>
@@ -189,6 +203,62 @@
     </div>
   </div>
 </footer>
+
+<!-- ============ REGISTRATION MODAL ============ -->
+<div class="modal-overlay" id="register-modal">
+  <div class="modal-box">
+    <button type="button" class="modal-close" data-close-register aria-label="Close">✕</button>
+    <span class="eyebrow">Reserve Your Free Seat</span>
+    <h3 style="margin-bottom:6px;">Register Now</h3>
+    <p style="margin-bottom:24px; color:var(--gray-600);">Takes 30 seconds. We'll send your confirmation + calendar invite by email.</p>
+
+    <form id="webinar-form" novalidate>
+      <div class="form-row">
+        <label for="field-name">Name</label>
+        <input type="text" id="field-name" name="name" placeholder="Jane Smith" autocomplete="name" required />
+        <div class="form-error">Please enter your name.</div>
+      </div>
+
+      <div class="form-row">
+        <label for="field-email">Email Address</label>
+        <input type="email" id="field-email" name="email" placeholder="jane@example.com" autocomplete="email" required />
+        <div class="form-error">Please enter a valid email address.</div>
+      </div>
+
+      <div class="form-row">
+        <label for="field-phone">Phone Number</label>
+        <input type="tel" id="field-phone" name="phone" placeholder="(555) 555-5555" autocomplete="tel" required />
+        <div class="form-error">Please enter your phone number.</div>
+      </div>
+
+      <div class="form-row">
+        <label for="field-followed">How long have you followed BCGK / Deals &amp; Dollars?</label>
+        <select id="field-followed" name="how_long_have_you_followed_bcgk_high_stakes_deals">
+          <option value="" selected>Select</option>
+          <option value="Less than a week">Less than a week</option>
+          <option value="7-30 days">7-30 days</option>
+          <option value="3-11 months">3-11 months</option>
+          <option value="12 months+">12 months +</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="field-capital">Liquid Capital / Credit Available for Your Next Deal</label>
+        <select id="field-capital" name="liquid_capital_or_credit_available_for_your_next_deal">
+          <option value="" selected>Select a range</option>
+          <option value="Less than $25,000">Less than $25,000</option>
+          <option value="$25,000 – $50,000">$25,000 – $50,000</option>
+          <option value="$50,000 – $100,000">$50,000 – $100,000</option>
+          <option value="$100,000 – $250,000">$100,000 – $250,000</option>
+          <option value="$250,000+">$250,000 +</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block btn-cta-long">YES, I WANT IN ON THE INNER CIRCLE</button>
+      <p class="form-note">By registering you'll receive a confirmation email and calendar invite. No spam, unsubscribe anytime.</p>
+    </form>
+  </div>
+</div>
 
 <div class="toast" id="site-toast">
   <div class="toast-check">✓</div>

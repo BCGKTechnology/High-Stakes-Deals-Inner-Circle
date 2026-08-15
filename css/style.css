@@ -184,17 +184,17 @@ ul { padding: 0; margin: 0; list-style: none; }
    the font size steps down at narrower widths instead of wrapping. */
 .btn-cta-long {
   padding: 18px 24px;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   line-height: 1;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 @media (max-width: 600px) {
-  .btn-cta-long { font-size: 0.68rem; padding: 14px 16px; }
+  .btn-cta-long { font-size: 1.02rem; padding: 14px 16px; }
 }
 @media (max-width: 420px) {
-  .btn-cta-long { font-size: 0.58rem; padding: 12px 12px; }
+  .btn-cta-long { font-size: 0.87rem; padding: 12px 12px; }
 }
 
 /* Header / Nav */
@@ -345,6 +345,7 @@ ul { padding: 0; margin: 0; list-style: none; }
   font-weight: 800;
   font-size: 2rem;
   color: var(--gold-400);
+  white-space: nowrap;
 }
 .hero-stat .label {
   font-size: 0.85rem;
@@ -398,6 +399,11 @@ ul { padding: 0; margin: 0; list-style: none; }
   font-family: var(--font-display);
   font-weight: 800;
 }
+.card .icon-badge svg { width: 26px; height: 26px; }
+
+/* "What members get" cards — icon + title centered, body copy centered beneath. */
+.benefits-grid .card { text-align: center; }
+.benefits-grid .card .icon-badge { margin-left: auto; margin-right: auto; }
 
 .pillar-card {
   background: var(--navy-800);
@@ -410,12 +416,15 @@ ul { padding: 0; margin: 0; list-style: none; }
 }
 .pillar-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-ring-hover); }
 .pillar-card .pillar-letter {
-  font-family: var(--font-display);
-  font-size: 2.6rem;
-  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
   color: var(--gold-500);
-  margin-bottom: 6px;
+  margin-bottom: 18px;
 }
+.pillar-card .pillar-letter svg { width: 100%; height: 100%; }
 .pillar-card p { color: rgba(255,255,255,0.68); margin-bottom: 0; }
 
 /* Team */
@@ -558,6 +567,7 @@ ul { padding: 0; margin: 0; list-style: none; }
   font-weight: 800;
   font-size: 2.4rem;
   color: var(--charcoal);
+  white-space: nowrap;
 }
 .stats-strip .label { color: var(--gray-600); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; }
 @media (max-width: 480px) {

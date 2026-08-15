@@ -11,7 +11,7 @@ window.BCGK_CONFIG = {
 
   // Sent to HubSpot on registration to populate the contact's Event Name /
   // Event Date properties (separate from the CRM's Marketing Events feature).
-  eventName: "High Stakes Deals FREE Masterclass",
+  eventName: "High Stakes Deals FREE Webinar",
 
   // Zoom meeting link sent to registrants and used for the calendar invite.
   meetingLink: "https://zoom.us/j/98166686039?pwd=U3Q9vNiESNnTR1zsqiNbiLzOC09j7a.1",

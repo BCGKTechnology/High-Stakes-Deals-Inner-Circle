@@ -201,7 +201,7 @@
       "DTSTAMP:" + toICSDate(new Date()),
       "DTSTART:" + toICSDate(start),
       "DTEND:" + toICSDate(end),
-      "SUMMARY:High Stakes Deals FREE Masterclass",
+      "SUMMARY:High Stakes Deals FREE Webinar",
       "LOCATION:" + cfg.meetingLink,
       "DESCRIPTION:Join Here: " + cfg.meetingLink + " \\n\\nWe're dropping multifamily nuggets you haven't heard before: bonus depreciation\\, syndications\\, GP/LP structure\\, raising investor money\\, investing with IRAs\\, underwriting your first deal\\, and more.",
       "URL:" + cfg.meetingLink,
@@ -209,7 +209,7 @@
       "BEGIN:VALARM",
       "TRIGGER:-PT30M",
       "ACTION:DISPLAY",
-      "DESCRIPTION:High Stakes Deals Masterclass starts in 30 minutes",
+      "DESCRIPTION:High Stakes Deals Webinar starts in 30 minutes",
       "END:VALARM",
       "END:VEVENT",
       "END:VCALENDAR"
@@ -218,7 +218,7 @@
     var url = URL.createObjectURL(blob);
     var a = document.createElement("a");
     a.href = url;
-    a.download = "High-Stakes-Deals-Masterclass.ics";
+    a.download = "High-Stakes-Deals-Webinar.ics";
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -245,7 +245,7 @@
     var end = new Date(start.getTime() + cfg.webinarDurationMinutes * 60000);
     var params = new URLSearchParams({
       action: "TEMPLATE",
-      text: "High Stakes Deals FREE Masterclass",
+      text: "High Stakes Deals FREE Webinar",
       dates: toGCalDate(start) + "/" + toGCalDate(end),
       details: "Join Here: " + cfg.meetingLink,
       location: cfg.meetingLink
